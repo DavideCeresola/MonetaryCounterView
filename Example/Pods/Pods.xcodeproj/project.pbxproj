@@ -40,13 +40,13 @@
 		0F48BAC12218A1AF19E1BA7E8FC824DD /* Pods-MonetaryCounterView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MonetaryCounterView_Tests.modulemap"; sourceTree = "<group>"; };
 		14D455C1221BA16C62543AC7A182A24A /* Pods-MonetaryCounterView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MonetaryCounterView_Tests-dummy.m"; sourceTree = "<group>"; };
 		2A5F6138B9CC7FBFE7389F0FFB75AF36 /* MonetaryCounterView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MonetaryCounterView-umbrella.h"; sourceTree = "<group>"; };
-		2C7C0A0DB3159E9C5F9669561AFD9F3C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2C7C0A0DB3159E9C5F9669561AFD9F3C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		37D3F60E44196D75760245E189EE962C /* Pods-MonetaryCounterView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MonetaryCounterView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3F0A195770925C0F5B49B6B1780A1025 /* Pods-MonetaryCounterView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MonetaryCounterView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		42A880AA39D39FD336BBCD978A40FE61 /* MonetaryCounterView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MonetaryCounterView.swift; path = MonetaryCounterView/Classes/MonetaryCounterView.swift; sourceTree = "<group>"; };
 		46ED61A1D033A1CDFFA6151855400104 /* Pods-MonetaryCounterView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MonetaryCounterView_Tests-umbrella.h"; sourceTree = "<group>"; };
 		4CA07EB3DE73B3F2EEC72EB13FFFFED6 /* Pods-MonetaryCounterView_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MonetaryCounterView_Example"; path = Pods_MonetaryCounterView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		56F9875E4D7EFFA602A9352A90B7B406 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		56F9875E4D7EFFA602A9352A90B7B406 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		69632652145FCBAFFDA6E3B012BF577F /* Pods-MonetaryCounterView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MonetaryCounterView_Example.modulemap"; sourceTree = "<group>"; };
 		6A245B7C67FA82DABC66767D42FF366C /* MonetaryCounterView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MonetaryCounterView.release.xcconfig; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -54,13 +54,13 @@
 		783C935C013375018807948E0AC2E37A /* MonetaryCounterView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MonetaryCounterView.debug.xcconfig; sourceTree = "<group>"; };
 		7A8672B1E145F65A899900455FBE426C /* MonetaryCounterView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MonetaryCounterView.modulemap; sourceTree = "<group>"; };
 		7ED1A2B5088B48B4B8EA66EF312BC3B7 /* MonetaryCounterView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MonetaryCounterView; path = MonetaryCounterView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		871F3386667542CC9FFC21EBB0B1A072 /* MonetaryCounterView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MonetaryCounterView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		871F3386667542CC9FFC21EBB0B1A072 /* MonetaryCounterView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MonetaryCounterView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		8AB1A438CC0C7D8E672C0C3A831B76B7 /* Pods-MonetaryCounterView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MonetaryCounterView_Example-Info.plist"; sourceTree = "<group>"; };
 		8B199E03919FD7E05D45691930972A27 /* Pods-MonetaryCounterView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MonetaryCounterView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8CAF92880899CE99ED516FDC4A4451E2 /* Pods-MonetaryCounterView_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MonetaryCounterView_Tests-Info.plist"; sourceTree = "<group>"; };
 		97123C6B313D30A7C7F47430C63349FB /* Pods-MonetaryCounterView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MonetaryCounterView_Example-frameworks.sh"; sourceTree = "<group>"; };
 		9BFC549A007E494651B9DF4C3CF0CAC8 /* MonetaryCounterView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MonetaryCounterView-dummy.m"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A8DA1759E4E0B398425D2FD611A19208 /* Pods-MonetaryCounterView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MonetaryCounterView_Example-umbrella.h"; sourceTree = "<group>"; };
 		B4EFD54E28881B5B0EE609C49B065902 /* MonetaryCounterView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MonetaryCounterView-Info.plist"; sourceTree = "<group>"; };
 		C8913F3E93CD683C5C2603734BA97FC7 /* Pods-MonetaryCounterView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MonetaryCounterView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -316,7 +316,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1320;
+				LastUpgradeCheck = 1240;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -632,7 +632,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

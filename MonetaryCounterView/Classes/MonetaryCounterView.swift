@@ -7,7 +7,7 @@
 
 import UIKit
 
-public class MonetaryCounterView: UIView {
+public class MonetaryCounterView: UILabel {
     
     private lazy var contentView: UIStackView = {
         
@@ -31,21 +31,19 @@ public class MonetaryCounterView: UIView {
     
     public var duration: CFTimeInterval = 0.4
     
-    public var font: UIFont = UIFont.systemFont(ofSize: UIFont.systemFontSize) {
+    public override var font: UIFont? {
         didSet {
-            updateMaxPreferredFont()
+            applyToLabels { $0.font = font }
         }
     }
     
-    public var textColor: UIColor = UIColor.darkText {
+    public override var textColor: UIColor? {
         didSet {
-            contentView.arrangedSubviews
-                .compactMap { $0 as? MonetaryLabel }
-                .forEach { $0.textColor = textColor }
+            applyToLabels { $0.textColor = textColor }
         }
     }
     
-    public var highlightedTextColor: UIColor = .red
+    public var highlightedColor: UIColor = .red
     
     public override init(frame: CGRect) {
         super.init(frame: frame)
@@ -64,14 +62,22 @@ public class MonetaryCounterView: UIView {
         }
     }
     
-    public var text: String? {
-        didSet {
-            update(with: oldValue)
-            updateMaxPreferredFont()
+    public override var text: String? {
+        willSet {
+            updateForText()
+        }
+    }
+    
+    public override var attributedText: NSAttributedString? {
+        willSet {
+            updateForText()
         }
     }
     
     private func commonInit() {
+        
+        font = UIFont.systemFont(ofSize: UIFont.systemFontSize)
+        textColor = UIColor.darkText
         
         configure(with: Locale.current.currencyCode ?? "EUR")
         
@@ -83,15 +89,6 @@ public class MonetaryCounterView: UIView {
             contentView.bottomAnchor.constraint(equalTo: bottomAnchor),
             contentView.topAnchor.constraint(equalTo: topAnchor),
         ])
-        
-    }
-    
-    public override func layoutSubviews() {
-        super.layoutSubviews()
-        
-        if contentView.frame.width > .zero {
-            updateMaxPreferredFont()
-        }
         
     }
     
@@ -108,24 +105,12 @@ public class MonetaryCounterView: UIView {
         
     }
     
-    private func update(with oldText: String?) {
+    private func updateForText() {
         
         contentView.arrangedSubviews.forEach {
             contentView.removeArrangedSubview($0)
             $0.removeFromSuperview()
         }
-        
-        guard let newText = text else {
-            return
-        }
-        
-        let labels = newText.map { char -> UILabel in
-            let label = generateLabelComponent()
-            label.text = String(char)
-            return label
-        }
-        
-        labels.forEach { contentView.addArrangedSubview($0) }
         
     }
     
@@ -205,7 +190,7 @@ public class MonetaryCounterView: UIView {
         }
         
         //  animate text changes
-        let highlightedTextColor = self.highlightedTextColor
+        let highlightedTextColor = self.highlightedColor
         DispatchQueue.main.asyncAfter(deadline: .now() + duration) { [weak self] in
             changedIndexes.forEach { index in
                 let label = self?.contentView.arrangedSubviews[index] as? MonetaryLabel
@@ -275,7 +260,13 @@ public class MonetaryCounterView: UIView {
     
     private func updateMaxPreferredFont() {
         
-        var currentFont = font
+        guard var currentFont = font else {
+            return
+        }
+        
+        applyToLabels { $0.font = currentFont }
+        
+        layoutIfNeeded()
         
         var contentSizeWidth = contentView.arrangedSubviews
             .compactMap { $0 as? MonetaryLabel }
@@ -283,7 +274,7 @@ public class MonetaryCounterView: UIView {
             .map { NSString(string: $0).size(withAttributes: [.font: currentFont]).width }
             .reduce(0, +)
         
-        let availableWidth = frame.width - layoutMargins.left - layoutMargins.right
+        let availableWidth = frame.width
         
         while contentSizeWidth > availableWidth && availableWidth > .zero {
             currentFont = currentFont.withSize(currentFont.pointSize - 1)
@@ -293,11 +284,21 @@ public class MonetaryCounterView: UIView {
                 .map { NSString(string: $0).size(withAttributes: [.font: currentFont]).width }
                 .reduce(0, +)
         }
-
-        contentView.arrangedSubviews
-            .compactMap { $0 as? MonetaryLabel }
-            .forEach { $0.font = currentFont }
         
+        applyToLabels { $0.font = currentFont }
+        
+    }
+    
+}
+
+private extension MonetaryCounterView {
+    
+    var labels: [UILabel] {
+        return contentView.arrangedSubviews.compactMap { $0 as? UILabel }
+    }
+    
+    func applyToLabels(_ apply: ((UILabel) -> Void)) {
+        labels.forEach { apply($0) }
     }
     
 }
@@ -452,4 +453,3 @@ private extension String {
     }
     
 }
-

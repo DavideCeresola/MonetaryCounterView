@@ -1,5 +1,5 @@
 PODS:
-  - MonetaryCounterView (0.1.1)
+  - MonetaryCounterView (0.1.4)
 
 DEPENDENCIES:
   - MonetaryCounterView (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MonetaryCounterView: c53ee4cec8cab1e64a17766939853428a3809819
+  MonetaryCounterView: be0ffc3b3180113e883ac4c8d4ba85c1ee1fe4c0
 
 PODFILE CHECKSUM: 229602d5987782d38b18afd4d6662dce75d4036b
 
