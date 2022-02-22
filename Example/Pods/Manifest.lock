@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MonetaryCounterView: 73e663118976cbb54ecf2957d069f179be58e8b1
+  MonetaryCounterView: 7a78ea159a966388bacbbe7af17250a5cb9e9e5b
 
 PODFILE CHECKSUM: b873f7d96259212f9c8a7930fd3f4ccda316dc90
 
