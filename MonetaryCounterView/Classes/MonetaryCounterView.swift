@@ -379,24 +379,24 @@ private extension CALayer {
         
         let animation = CATransition()
         animation.beginTime = CACurrentMediaTime()
-        animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        animation.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
         animation.duration = duration
-        animation.type = kCATransitionPush
-        animation.subtype = kCATransitionFromTop
+        animation.type = .push
+        animation.subtype = .fromTop
         
-        self.add(animation, forKey: kCATransitionPush)
+        self.add(animation, forKey: CATransitionType.push.rawValue)
     }
     
     func animateDown(with duration: CFTimeInterval) {
         
         let animation = CATransition()
         animation.beginTime = CACurrentMediaTime()
-        animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        animation.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
         animation.duration = duration
-        animation.type = kCATransitionPush
-        animation.subtype = kCATransitionFromBottom
+        animation.type = .push
+        animation.subtype = .fromBottom
         
-        self.add(animation, forKey: kCATransitionPush)
+        self.add(animation, forKey: CATransitionType.push.rawValue)
     }
     
 }
