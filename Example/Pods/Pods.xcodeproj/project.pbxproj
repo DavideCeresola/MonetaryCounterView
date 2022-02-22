@@ -1,0 +1,777 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1857A75BBBD12351B9CC7EC0473F9545 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		5D806B21840A661605D9965C982D3094 /* Pods-MonetaryCounterView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E7B9DB0B0E4378200DD27280D6E9E4 /* Pods-MonetaryCounterView_Example-dummy.m */; };
+		730324071D3DA3C5B241DC68C8BE693D /* MonetaryCounterView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 77F5E28B1FEF1DC18DBABF53356CB468 /* MonetaryCounterView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		88BC46EB0A2477F87DD8E0EDBC2083AF /* Pods-MonetaryCounterView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46ED61A1D033A1CDFFA6151855400104 /* Pods-MonetaryCounterView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9915499FCBDEFFB5DA5CA17EDCBDA388 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		A562446F27C4D74D00BDFC0C /* MonetaryCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A562446E27C4D74D00BDFC0C /* MonetaryCounterView.swift */; };
+		A789C1D847A5570C01839EEC7A694590 /* MonetaryCounterView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF31561C30632102FF9FAEBB3283D22 /* MonetaryCounterView-dummy.m */; };
+		DEFDE2B298BA432E9989999DF05D50B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		EE232E4DAAB48410A686F3FEEFFCCB01 /* Pods-MonetaryCounterView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D455C1221BA16C62543AC7A182A24A /* Pods-MonetaryCounterView_Tests-dummy.m */; };
+		F52E88C716420546FAC5E1E27A2D1DE1 /* Pods-MonetaryCounterView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A8DA1759E4E0B398425D2FD611A19208 /* Pods-MonetaryCounterView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D18CEAE054A7CA15CC7082F5DE127945 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56A93C43B2320D8AD5F62A21C9B42864;
+			remoteInfo = MonetaryCounterView;
+		};
+		EA44E48E891EBB978E48EF83C9CCDD20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E7DFF7C22389B9013B9598C8A7252957;
+			remoteInfo = "Pods-MonetaryCounterView_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F48BAC12218A1AF19E1BA7E8FC824DD /* Pods-MonetaryCounterView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MonetaryCounterView_Tests.modulemap"; sourceTree = "<group>"; };
+		14D455C1221BA16C62543AC7A182A24A /* Pods-MonetaryCounterView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MonetaryCounterView_Tests-dummy.m"; sourceTree = "<group>"; };
+		2750B0CE373A3FCA9856867307D031E9 /* MonetaryCounterView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MonetaryCounterView-Info.plist"; sourceTree = "<group>"; };
+		2BCB6C95A46A94FF5D14A256A218C50A /* MonetaryCounterView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MonetaryCounterView.debug.xcconfig; sourceTree = "<group>"; };
+		37D3F60E44196D75760245E189EE962C /* Pods-MonetaryCounterView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MonetaryCounterView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		3F0A195770925C0F5B49B6B1780A1025 /* Pods-MonetaryCounterView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MonetaryCounterView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		46ED61A1D033A1CDFFA6151855400104 /* Pods-MonetaryCounterView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MonetaryCounterView_Tests-umbrella.h"; sourceTree = "<group>"; };
+		4CA07EB3DE73B3F2EEC72EB13FFFFED6 /* Pods-MonetaryCounterView_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MonetaryCounterView_Example"; path = Pods_MonetaryCounterView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D4F38A922F8B89E125446EC576BEFE5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		68984FCFC5D9A3CF5573D32CDB2BAA7D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		69632652145FCBAFFDA6E3B012BF577F /* Pods-MonetaryCounterView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MonetaryCounterView_Example.modulemap"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		76112DACEE4932A3E451EDD2637AD5D6 /* Pods-MonetaryCounterView_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MonetaryCounterView_Tests"; path = Pods_MonetaryCounterView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77F5E28B1FEF1DC18DBABF53356CB468 /* MonetaryCounterView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MonetaryCounterView-umbrella.h"; sourceTree = "<group>"; };
+		7ED1A2B5088B48B4B8EA66EF312BC3B7 /* MonetaryCounterView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MonetaryCounterView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AB1A438CC0C7D8E672C0C3A831B76B7 /* Pods-MonetaryCounterView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MonetaryCounterView_Example-Info.plist"; sourceTree = "<group>"; };
+		8B199E03919FD7E05D45691930972A27 /* Pods-MonetaryCounterView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MonetaryCounterView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8CAF92880899CE99ED516FDC4A4451E2 /* Pods-MonetaryCounterView_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MonetaryCounterView_Tests-Info.plist"; sourceTree = "<group>"; };
+		940358B81245FA89055E55CDC4043A27 /* MonetaryCounterView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MonetaryCounterView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		97123C6B313D30A7C7F47430C63349FB /* Pods-MonetaryCounterView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MonetaryCounterView_Example-frameworks.sh"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A562446E27C4D74D00BDFC0C /* MonetaryCounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonetaryCounterView.swift; sourceTree = "<group>"; };
+		A8DA1759E4E0B398425D2FD611A19208 /* Pods-MonetaryCounterView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MonetaryCounterView_Example-umbrella.h"; sourceTree = "<group>"; };
+		BEF31561C30632102FF9FAEBB3283D22 /* MonetaryCounterView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MonetaryCounterView-dummy.m"; sourceTree = "<group>"; };
+		C8913F3E93CD683C5C2603734BA97FC7 /* Pods-MonetaryCounterView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MonetaryCounterView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		CF80D4618684CF7A3855A2468AD41658 /* MonetaryCounterView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MonetaryCounterView.modulemap; sourceTree = "<group>"; };
+		D3778C234109FB42F0FFF741E6362CA7 /* MonetaryCounterView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MonetaryCounterView-prefix.pch"; sourceTree = "<group>"; };
+		D687B8F6A06E705DA73FFC779375F988 /* MonetaryCounterView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MonetaryCounterView.release.xcconfig; sourceTree = "<group>"; };
+		DA4EF63B933A1769A456E3003EBDD248 /* Pods-MonetaryCounterView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MonetaryCounterView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		ED991EDBC9C611CDA5193CAD53312F4B /* Pods-MonetaryCounterView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MonetaryCounterView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		EFD6CA7D2BB61CE4879146CE201C989D /* Pods-MonetaryCounterView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MonetaryCounterView_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		F23F79B3F1E347E40CCE38EAB0309E2A /* Pods-MonetaryCounterView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MonetaryCounterView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F8E7B9DB0B0E4378200DD27280D6E9E4 /* Pods-MonetaryCounterView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MonetaryCounterView_Example-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6EF9797170F09D8A775AD6652C0F81BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEFDE2B298BA432E9989999DF05D50B3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB695897E5798A652AECDE98B5E84124 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9915499FCBDEFFB5DA5CA17EDCBDA388 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8BF11357D23A5DF7114D68A9C233610 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1857A75BBBD12351B9CC7EC0473F9545 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1374B81548E9C384E95B90FFED2F3F71 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				68984FCFC5D9A3CF5573D32CDB2BAA7D /* LICENSE */,
+				940358B81245FA89055E55CDC4043A27 /* MonetaryCounterView.podspec */,
+				5D4F38A922F8B89E125446EC576BEFE5 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		31E2E55383B28676F955F1A182552A61 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7ED1A2B5088B48B4B8EA66EF312BC3B7 /* MonetaryCounterView.framework */,
+				4CA07EB3DE73B3F2EEC72EB13FFFFED6 /* Pods-MonetaryCounterView_Example */,
+				76112DACEE4932A3E451EDD2637AD5D6 /* Pods-MonetaryCounterView_Tests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		421AE6CA99B9976D9E3CDFF3C6D4B9C0 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C480DF78EAD5D0D4B54CD1CB6368026 /* MonetaryCounterView */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7C480DF78EAD5D0D4B54CD1CB6368026 /* MonetaryCounterView */ = {
+			isa = PBXGroup;
+			children = (
+				1374B81548E9C384E95B90FFED2F3F71 /* Pod */,
+				E5DAFB89FD2EA2C06301B9F57F49E90E /* Support Files */,
+				A562446E27C4D74D00BDFC0C /* MonetaryCounterView.swift */,
+			);
+			name = MonetaryCounterView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				421AE6CA99B9976D9E3CDFF3C6D4B9C0 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				31E2E55383B28676F955F1A182552A61 /* Products */,
+				EA68A5FD784D4FBE80038FE3D5FB78FF /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E5DAFB89FD2EA2C06301B9F57F49E90E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF80D4618684CF7A3855A2468AD41658 /* MonetaryCounterView.modulemap */,
+				BEF31561C30632102FF9FAEBB3283D22 /* MonetaryCounterView-dummy.m */,
+				2750B0CE373A3FCA9856867307D031E9 /* MonetaryCounterView-Info.plist */,
+				D3778C234109FB42F0FFF741E6362CA7 /* MonetaryCounterView-prefix.pch */,
+				77F5E28B1FEF1DC18DBABF53356CB468 /* MonetaryCounterView-umbrella.h */,
+				2BCB6C95A46A94FF5D14A256A218C50A /* MonetaryCounterView.debug.xcconfig */,
+				D687B8F6A06E705DA73FFC779375F988 /* MonetaryCounterView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/MonetaryCounterView";
+			sourceTree = "<group>";
+		};
+		EA68A5FD784D4FBE80038FE3D5FB78FF /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F5B5FD30E1CF08564853A6CDF99D9C0B /* Pods-MonetaryCounterView_Example */,
+				F5DB145E452CD97C305F77D1832F6ADE /* Pods-MonetaryCounterView_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F5B5FD30E1CF08564853A6CDF99D9C0B /* Pods-MonetaryCounterView_Example */ = {
+			isa = PBXGroup;
+			children = (
+				69632652145FCBAFFDA6E3B012BF577F /* Pods-MonetaryCounterView_Example.modulemap */,
+				DA4EF63B933A1769A456E3003EBDD248 /* Pods-MonetaryCounterView_Example-acknowledgements.markdown */,
+				ED991EDBC9C611CDA5193CAD53312F4B /* Pods-MonetaryCounterView_Example-acknowledgements.plist */,
+				F8E7B9DB0B0E4378200DD27280D6E9E4 /* Pods-MonetaryCounterView_Example-dummy.m */,
+				97123C6B313D30A7C7F47430C63349FB /* Pods-MonetaryCounterView_Example-frameworks.sh */,
+				8AB1A438CC0C7D8E672C0C3A831B76B7 /* Pods-MonetaryCounterView_Example-Info.plist */,
+				A8DA1759E4E0B398425D2FD611A19208 /* Pods-MonetaryCounterView_Example-umbrella.h */,
+				37D3F60E44196D75760245E189EE962C /* Pods-MonetaryCounterView_Example.debug.xcconfig */,
+				3F0A195770925C0F5B49B6B1780A1025 /* Pods-MonetaryCounterView_Example.release.xcconfig */,
+			);
+			name = "Pods-MonetaryCounterView_Example";
+			path = "Target Support Files/Pods-MonetaryCounterView_Example";
+			sourceTree = "<group>";
+		};
+		F5DB145E452CD97C305F77D1832F6ADE /* Pods-MonetaryCounterView_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0F48BAC12218A1AF19E1BA7E8FC824DD /* Pods-MonetaryCounterView_Tests.modulemap */,
+				8B199E03919FD7E05D45691930972A27 /* Pods-MonetaryCounterView_Tests-acknowledgements.markdown */,
+				F23F79B3F1E347E40CCE38EAB0309E2A /* Pods-MonetaryCounterView_Tests-acknowledgements.plist */,
+				14D455C1221BA16C62543AC7A182A24A /* Pods-MonetaryCounterView_Tests-dummy.m */,
+				8CAF92880899CE99ED516FDC4A4451E2 /* Pods-MonetaryCounterView_Tests-Info.plist */,
+				46ED61A1D033A1CDFFA6151855400104 /* Pods-MonetaryCounterView_Tests-umbrella.h */,
+				C8913F3E93CD683C5C2603734BA97FC7 /* Pods-MonetaryCounterView_Tests.debug.xcconfig */,
+				EFD6CA7D2BB61CE4879146CE201C989D /* Pods-MonetaryCounterView_Tests.release.xcconfig */,
+			);
+			name = "Pods-MonetaryCounterView_Tests";
+			path = "Target Support Files/Pods-MonetaryCounterView_Tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0D7208719579064EFE38FAE40EE8001B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F52E88C716420546FAC5E1E27A2D1DE1 /* Pods-MonetaryCounterView_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		109190D55C1A95A4F335C0A2B74E128C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				730324071D3DA3C5B241DC68C8BE693D /* MonetaryCounterView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30928D683EEE9E61E9DA102DA83D2BDF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88BC46EB0A2477F87DD8E0EDBC2083AF /* Pods-MonetaryCounterView_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		56A93C43B2320D8AD5F62A21C9B42864 /* MonetaryCounterView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A52556FEC5BACB77E116E61B0E065856 /* Build configuration list for PBXNativeTarget "MonetaryCounterView" */;
+			buildPhases = (
+				109190D55C1A95A4F335C0A2B74E128C /* Headers */,
+				1B40C9FC7D658ABA77DA119038345654 /* Sources */,
+				D8BF11357D23A5DF7114D68A9C233610 /* Frameworks */,
+				2CE2318D25188F4AE8EEA294BC5F4D9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MonetaryCounterView;
+			productName = MonetaryCounterView;
+			productReference = 7ED1A2B5088B48B4B8EA66EF312BC3B7 /* MonetaryCounterView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E7DFF7C22389B9013B9598C8A7252957 /* Pods-MonetaryCounterView_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C8D185745A0957F3071CF4251F7759B /* Build configuration list for PBXNativeTarget "Pods-MonetaryCounterView_Example" */;
+			buildPhases = (
+				0D7208719579064EFE38FAE40EE8001B /* Headers */,
+				E65166FF761DF9707E65BF720A735DD1 /* Sources */,
+				6EF9797170F09D8A775AD6652C0F81BD /* Frameworks */,
+				3402D77BE5FE3E4E8963BE9F8C59BC86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFE0FBB028B241D3A421562F76FBA2EC /* PBXTargetDependency */,
+			);
+			name = "Pods-MonetaryCounterView_Example";
+			productName = Pods_MonetaryCounterView_Example;
+			productReference = 4CA07EB3DE73B3F2EEC72EB13FFFFED6 /* Pods-MonetaryCounterView_Example */;
+			productType = "com.apple.product-type.framework";
+		};
+		F232B13F8D3761CD58450EC3068DEE9A /* Pods-MonetaryCounterView_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B7A0C0C91837D23F023738C99F1DC6D /* Build configuration list for PBXNativeTarget "Pods-MonetaryCounterView_Tests" */;
+			buildPhases = (
+				30928D683EEE9E61E9DA102DA83D2BDF /* Headers */,
+				A836365F4F43D4ECA916C654230E289F /* Sources */,
+				AB695897E5798A652AECDE98B5E84124 /* Frameworks */,
+				87991279028185D2112B82375767FB32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7EC1DDE731753FD31392481CFE1C6F9 /* PBXTargetDependency */,
+			);
+			name = "Pods-MonetaryCounterView_Tests";
+			productName = Pods_MonetaryCounterView_Tests;
+			productReference = 76112DACEE4932A3E451EDD2637AD5D6 /* Pods-MonetaryCounterView_Tests */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					56A93C43B2320D8AD5F62A21C9B42864 = {
+						LastSwiftMigration = 1320;
+					};
+				};
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 31E2E55383B28676F955F1A182552A61 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				56A93C43B2320D8AD5F62A21C9B42864 /* MonetaryCounterView */,
+				E7DFF7C22389B9013B9598C8A7252957 /* Pods-MonetaryCounterView_Example */,
+				F232B13F8D3761CD58450EC3068DEE9A /* Pods-MonetaryCounterView_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2CE2318D25188F4AE8EEA294BC5F4D9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3402D77BE5FE3E4E8963BE9F8C59BC86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87991279028185D2112B82375767FB32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B40C9FC7D658ABA77DA119038345654 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A562446F27C4D74D00BDFC0C /* MonetaryCounterView.swift in Sources */,
+				A789C1D847A5570C01839EEC7A694590 /* MonetaryCounterView-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A836365F4F43D4ECA916C654230E289F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE232E4DAAB48410A686F3FEEFFCCB01 /* Pods-MonetaryCounterView_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E65166FF761DF9707E65BF720A735DD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D806B21840A661605D9965C982D3094 /* Pods-MonetaryCounterView_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AFE0FBB028B241D3A421562F76FBA2EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MonetaryCounterView;
+			target = 56A93C43B2320D8AD5F62A21C9B42864 /* MonetaryCounterView */;
+			targetProxy = D18CEAE054A7CA15CC7082F5DE127945 /* PBXContainerItemProxy */;
+		};
+		C7EC1DDE731753FD31392481CFE1C6F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-MonetaryCounterView_Example";
+			target = E7DFF7C22389B9013B9598C8A7252957 /* Pods-MonetaryCounterView_Example */;
+			targetProxy = EA44E48E891EBB978E48EF83C9CCDD20 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0631B2831A53BDCB235324DDF1910619 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D687B8F6A06E705DA73FFC779375F988 /* MonetaryCounterView.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MonetaryCounterView/MonetaryCounterView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MonetaryCounterView/MonetaryCounterView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MonetaryCounterView/MonetaryCounterView.modulemap";
+				PRODUCT_MODULE_NAME = MonetaryCounterView;
+				PRODUCT_NAME = MonetaryCounterView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		AD67BB3DFC255E45DC3AF45488C89A55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F0A195770925C0F5B49B6B1780A1025 /* Pods-MonetaryCounterView_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MonetaryCounterView_Example/Pods-MonetaryCounterView_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MonetaryCounterView_Example/Pods-MonetaryCounterView_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		CBD9922D908713BEFE0765FAD72B2A58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37D3F60E44196D75760245E189EE962C /* Pods-MonetaryCounterView_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MonetaryCounterView_Example/Pods-MonetaryCounterView_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MonetaryCounterView_Example/Pods-MonetaryCounterView_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D449A7845C1F59584CD48795AFA55AA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BCB6C95A46A94FF5D14A256A218C50A /* MonetaryCounterView.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MonetaryCounterView/MonetaryCounterView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MonetaryCounterView/MonetaryCounterView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MonetaryCounterView/MonetaryCounterView.modulemap";
+				PRODUCT_MODULE_NAME = MonetaryCounterView;
+				PRODUCT_NAME = MonetaryCounterView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D9F636AB34EBE2FFA71978D2BC2F9677 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFD6CA7D2BB61CE4879146CE201C989D /* Pods-MonetaryCounterView_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MonetaryCounterView_Tests/Pods-MonetaryCounterView_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MonetaryCounterView_Tests/Pods-MonetaryCounterView_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F330632DC153C1E42F5145C95076A261 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8913F3E93CD683C5C2603734BA97FC7 /* Pods-MonetaryCounterView_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MonetaryCounterView_Tests/Pods-MonetaryCounterView_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MonetaryCounterView_Tests/Pods-MonetaryCounterView_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C8D185745A0957F3071CF4251F7759B /* Build configuration list for PBXNativeTarget "Pods-MonetaryCounterView_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBD9922D908713BEFE0765FAD72B2A58 /* Debug */,
+				AD67BB3DFC255E45DC3AF45488C89A55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B7A0C0C91837D23F023738C99F1DC6D /* Build configuration list for PBXNativeTarget "Pods-MonetaryCounterView_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F330632DC153C1E42F5145C95076A261 /* Debug */,
+				D9F636AB34EBE2FFA71978D2BC2F9677 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
+				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A52556FEC5BACB77E116E61B0E065856 /* Build configuration list for PBXNativeTarget "MonetaryCounterView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D449A7845C1F59584CD48795AFA55AA0 /* Debug */,
+				0631B2831A53BDCB235324DDF1910619 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

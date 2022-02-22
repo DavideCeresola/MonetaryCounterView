@@ -1,0 +1,16 @@
+PODS:
+  - MonetaryCounterView (0.1.0)
+
+DEPENDENCIES:
+  - MonetaryCounterView (from `../`)
+
+EXTERNAL SOURCES:
+  MonetaryCounterView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MonetaryCounterView: 73e663118976cbb54ecf2957d069f179be58e8b1
+
+PODFILE CHECKSUM: b873f7d96259212f9c8a7930fd3f4ccda316dc90
+
+COCOAPODS: 1.11.2

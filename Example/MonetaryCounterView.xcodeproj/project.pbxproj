@@ -12,8 +12,9 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		607FACEC1AFB9204008FA782 /* MonetaryCounterBaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* MonetaryCounterBaseTests.swift */; };
 		8CF57EDA475CDCB44A1D5184 /* Pods_MonetaryCounterView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C3FF1F56617FE1303D97F04 /* Pods_MonetaryCounterView_Tests.framework */; };
+		A562447127C4DA8F00BDFC0C /* MonetaryCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A562447027C4DA8F00BDFC0C /* MonetaryCounterTests.swift */; };
 		AE4040FA6A9DEFE27333AF30 /* Pods_MonetaryCounterView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C7A55E9A8439693D9CED553 /* Pods_MonetaryCounterView_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,7 +32,7 @@
 		0C7A55E9A8439693D9CED553 /* Pods_MonetaryCounterView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MonetaryCounterView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C3FF1F56617FE1303D97F04 /* Pods_MonetaryCounterView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MonetaryCounterView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26346822C8196257C19EAEA8 /* Pods-MonetaryCounterView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonetaryCounterView_Example.debug.xcconfig"; path = "Target Support Files/Pods-MonetaryCounterView_Example/Pods-MonetaryCounterView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		3E6235C5A384E2F73A5A757C /* MonetaryCounterView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MonetaryCounterView.podspec; path = ../MonetaryCounterView.podspec; sourceTree = "<group>"; };
+		3E6235C5A384E2F73A5A757C /* MonetaryCounterView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MonetaryCounterView.podspec; path = ../MonetaryCounterView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		607FACD01AFB9204008FA782 /* MonetaryCounterView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonetaryCounterView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,11 +42,12 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* MonetaryCounterView_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MonetaryCounterView_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		8BB34C9663CCFCB3D4AF75BA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		607FACEB1AFB9204008FA782 /* MonetaryCounterBaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonetaryCounterBaseTests.swift; sourceTree = "<group>"; };
+		8BB34C9663CCFCB3D4AF75BA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		A562447027C4DA8F00BDFC0C /* MonetaryCounterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonetaryCounterTests.swift; sourceTree = "<group>"; };
 		A5645FB4F0D660F94B6B389B /* Pods-MonetaryCounterView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonetaryCounterView_Example.release.xcconfig"; path = "Target Support Files/Pods-MonetaryCounterView_Example/Pods-MonetaryCounterView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C2FEA0D09447ADDACD33A258 /* Pods-MonetaryCounterView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonetaryCounterView_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MonetaryCounterView_Tests/Pods-MonetaryCounterView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		CA88A2E6F79998C8C6F2C8F4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		CA88A2E6F79998C8C6F2C8F4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		ED52FC2DC41535EEE1BCB445 /* Pods-MonetaryCounterView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonetaryCounterView_Tests.release.xcconfig"; path = "Target Support Files/Pods-MonetaryCounterView_Tests/Pods-MonetaryCounterView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,7 +79,6 @@
 				C2FEA0D09447ADDACD33A258 /* Pods-MonetaryCounterView_Tests.debug.xcconfig */,
 				ED52FC2DC41535EEE1BCB445 /* Pods-MonetaryCounterView_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -127,7 +128,8 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				607FACEB1AFB9204008FA782 /* MonetaryCounterBaseTests.swift */,
+				A562447027C4DA8F00BDFC0C /* MonetaryCounterTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -190,7 +192,6 @@
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				10EA53345D8777F36D77F599 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -228,6 +229,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -263,24 +265,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		10EA53345D8777F36D77F599 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MonetaryCounterView_Tests/Pods-MonetaryCounterView_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MonetaryCounterView_Tests/Pods-MonetaryCounterView_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		163DC8EEF7F7E0AA5A633B92 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -359,7 +343,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				607FACEC1AFB9204008FA782 /* MonetaryCounterBaseTests.swift in Sources */,
+				A562447127C4DA8F00BDFC0C /* MonetaryCounterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

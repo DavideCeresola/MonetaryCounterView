@@ -1,0 +1,6 @@
+framework module MonetaryCounterView {
+  umbrella header "MonetaryCounterView-umbrella.h"
+
+  export *
+  module * { export * }
+}

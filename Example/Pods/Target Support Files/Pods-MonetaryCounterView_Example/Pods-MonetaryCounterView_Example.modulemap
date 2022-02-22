@@ -1,0 +1,6 @@
+framework module Pods_MonetaryCounterView_Example {
+  umbrella header "Pods-MonetaryCounterView_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
