@@ -76,6 +76,8 @@ public class MonetaryCounterView: UILabel {
     
     private func commonInit() {
         
+        clipsToBounds = true
+        
         font = UIFont.systemFont(ofSize: UIFont.systemFontSize)
         textColor = UIColor.darkText
         
