@@ -408,21 +408,21 @@ private extension UILabel {
     
     func animateTextColor(highlightedColor: UIColor) {
         
-        let current = textColor
+        let currentColor = textColor
         
-        UIView.transition(with: self,
-                          duration: 0.5,
-                          options: .transitionCrossDissolve,
-                          animations: { [weak self] in self?.textColor = highlightedColor },
-                          completion: nil)
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-            UIView.transition(with: self,
-                              duration: 0.5,
-                              options: .transitionCrossDissolve,
-                              animations: { [weak self] in self?.textColor = current },
-                              completion: nil)
+        let changeColor = CATransition()
+        changeColor.duration = 3
+
+        CATransaction.begin()
+
+        CATransaction.setCompletionBlock { [weak self] in
+            self?.layer.add(changeColor, forKey: nil)
+            self?.textColor = currentColor
         }
+
+        textColor = highlightedColor
+
+        CATransaction.commit()
         
     }
     
