@@ -59,18 +59,21 @@ public class MonetaryCounterView: UILabel {
         didSet {
             update(with: oldValue)
             updateMaxPreferredFont()
+            accessibilityLabel = labels.compactMap { $0.text }.joined()
         }
     }
     
     public override var text: String? {
         willSet {
             updateForText()
+            accessibilityLabel = text
         }
     }
     
     public override var attributedText: NSAttributedString? {
         willSet {
             updateForText()
+            accessibilityLabel = attributedText?.string ?? text
         }
     }
     
@@ -258,6 +261,7 @@ public class MonetaryCounterView: UILabel {
     private func generateLabelComponent() -> MonetaryLabel {
         
         let label = MonetaryLabel()
+        label.accessibilityElementsHidden = true
         label.textColor = textColor
         label.font = font
         
@@ -314,6 +318,8 @@ private extension MonetaryCounterView {
         
         func animateUp(with duration: CFTimeInterval, from: Int, to: Int) -> Bool {
             
+            layer.removeAllAnimations()
+            
             var finalTo = to
             
             if to < from {
@@ -345,6 +351,8 @@ private extension MonetaryCounterView {
         }
         
         func animateDown(with duration: CFTimeInterval, from: Int, to: Int) -> Bool {
+            
+            layer.removeAllAnimations()
             
             var finalFrom = from
             

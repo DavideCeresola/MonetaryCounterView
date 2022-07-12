@@ -43,4 +43,18 @@ class MonetaryCounterTests: MonetaryCounterBaseTests {
         
     }
     
+    func testIncrementNegative() {
+        
+        let number: NSDecimalNumber = -42.47
+        counterView.number = number
+        expectedResult(number)
+        
+        counterView.number = -142.47
+        
+        let finalNumber: NSDecimalNumber = -42.47
+        counterView.number = finalNumber
+        expectedResult(finalNumber)
+        
+    }
+    
 }
