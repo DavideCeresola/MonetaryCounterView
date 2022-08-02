@@ -59,21 +59,25 @@ public class MonetaryCounterView: UILabel {
         didSet {
             update(with: oldValue)
             updateMaxPreferredFont()
-            accessibilityLabel = labels.compactMap { $0.text }.joined()
+            if let number = number {
+                accessibilityValue = numberFormatter.string(from: number)
+            } else {
+                accessibilityValue = attributedText?.string ?? text
+            }
         }
     }
     
     public override var text: String? {
         willSet {
             updateForText()
-            accessibilityLabel = text
+            accessibilityValue = text
         }
     }
     
     public override var attributedText: NSAttributedString? {
         willSet {
             updateForText()
-            accessibilityLabel = attributedText?.string ?? text
+            accessibilityValue = attributedText?.string ?? text
         }
     }
     
@@ -94,6 +98,15 @@ public class MonetaryCounterView: UILabel {
             contentView.bottomAnchor.constraint(equalTo: bottomAnchor),
             contentView.topAnchor.constraint(equalTo: topAnchor),
         ])
+        
+        setupAccessibility()
+        
+    }
+    
+    private func setupAccessibility() {
+        
+        isAccessibilityElement = true
+        accessibilityTraits = .staticText
         
     }
     
