@@ -31,6 +31,12 @@ public class MonetaryCounterView: UILabel {
     
     public var duration: CFTimeInterval = 0.4
     
+    public var leftView: UIView? = nil {
+        didSet {
+            updateForLeftView(oldValue: oldValue)
+        }
+    }
+    
     public override var font: UIFont? {
         didSet {
             applyToLabels { $0.font = font }
@@ -130,10 +136,12 @@ public class MonetaryCounterView: UILabel {
     
     private func updateForText() {
         
-        contentView.arrangedSubviews.forEach {
-            contentView.removeArrangedSubview($0)
-            $0.removeFromSuperview()
-        }
+        contentView.arrangedSubviews
+            .filter { $0 != leftView }
+            .forEach {
+                contentView.removeArrangedSubview($0)
+                $0.removeFromSuperview()
+            }
         
     }
     
@@ -144,10 +152,12 @@ public class MonetaryCounterView: UILabel {
         }
         
         guard let newNumber = number else {
-            return contentView.arrangedSubviews.forEach {
-                contentView.removeArrangedSubview($0)
-                $0.removeFromSuperview()
-            }
+            return contentView.arrangedSubviews
+                .filter { $0 != leftView }
+                .forEach {
+                    contentView.removeArrangedSubview($0)
+                    $0.removeFromSuperview()
+                }
         }
         
         //  if the sign changes, simply reconfigure
@@ -237,12 +247,14 @@ public class MonetaryCounterView: UILabel {
             
         }
         
-        contentView.arrangedSubviews.forEach {
-            contentView.removeArrangedSubview($0)
-            $0.removeFromSuperview()
-        }
+        contentView.arrangedSubviews
+            .filter { $0 != leftView }
+            .forEach {
+                contentView.removeArrangedSubview($0)
+                $0.removeFromSuperview()
+            }
         
-        components.forEach { contentView.addArrangedSubview($0) }
+        components.reversed().forEach { contentView.insertArrangedSubview($0, at: 0) }
         
     }
     
@@ -296,7 +308,11 @@ public class MonetaryCounterView: UILabel {
             .map { NSString(string: $0).size(withAttributes: [.font: currentFont]).width }
             .reduce(0, +)
         
-        let availableWidth = frame.width
+        var availableWidth = frame.width
+        
+        if let view = leftView {
+            availableWidth -= view.bounds.width
+        }
         
         while contentSizeWidth > availableWidth && availableWidth > .zero {
             currentFont = currentFont.withSize(currentFont.pointSize - 1)
@@ -308,6 +324,17 @@ public class MonetaryCounterView: UILabel {
         }
         
         applyToLabels { $0.font = currentFont }
+        
+    }
+    
+    private func updateForLeftView(oldValue: UIView?) {
+        
+        if let view = leftView {
+            contentView.addArrangedSubview(view)
+        } else if let oldView = oldValue {
+            contentView.removeArrangedSubview(oldView)
+            oldView.removeFromSuperview()
+        }
         
     }
     
