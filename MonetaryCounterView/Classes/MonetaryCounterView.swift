@@ -116,6 +116,11 @@ public class MonetaryCounterView: UILabel {
         
     }
     
+    public override func draw(_ rect: CGRect) {
+        super.draw(rect)
+        updateMaxPreferredFont()
+    }
+    
     public override func layoutSubviews() {
         super.layoutSubviews()
         updateMaxPreferredFont()
