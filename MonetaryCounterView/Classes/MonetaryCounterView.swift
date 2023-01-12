@@ -116,16 +116,6 @@ public class MonetaryCounterView: UILabel {
         
     }
     
-    public override func draw(_ rect: CGRect) {
-        super.draw(rect)
-        updateMaxPreferredFont()
-    }
-    
-    public override func layoutSubviews() {
-        super.layoutSubviews()
-        updateMaxPreferredFont()
-    }
-    
     public func configure(with currencyCode: String) {
         
         numberFormatter.currencyCode = currencyCode
@@ -306,6 +296,11 @@ public class MonetaryCounterView: UILabel {
         }
         
         applyToLabels { $0.font = currentFont }
+        
+        setNeedsUpdateConstraints()
+        updateConstraintsIfNeeded()
+        setNeedsLayout()
+        layoutIfNeeded()
         
         var contentSizeWidth = contentView.arrangedSubviews
             .compactMap { $0 as? MonetaryLabel }
