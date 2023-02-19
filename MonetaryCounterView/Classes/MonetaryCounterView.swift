@@ -171,11 +171,11 @@ public class MonetaryCounterView: UILabel {
             adjustLabelsForDiff(diff)
         }
         
-        let isIncrease = newNumber.compare(oldNumber) == .orderedDescending
-        
-        if !isIncrease {
+        if diff < .zero {
             oldNumberString = oldNumberString.substring(fromIndex: abs(diff))
         }
+        
+        let shouldIncrement = newNumber.compare(oldNumber) == .orderedDescending
         
         var changedIndexes: Set<Int> = Set()
         
@@ -195,7 +195,7 @@ public class MonetaryCounterView: UILabel {
             
             let oldChar: String
             
-            if isIncrease {
+            if diff >= 0 {
                 oldChar = oldNumberString[i - diff]
             } else {
                 oldChar = oldNumberString[i]
@@ -203,7 +203,7 @@ public class MonetaryCounterView: UILabel {
             
             if let oldInt = Int(oldChar), let newInt = Int(newChar) {
                 
-                if isIncrease {
+                if shouldIncrement {
                     if label?.animateUp(with: duration, from: oldInt, to: newInt) == true {
                         changedIndexes.insert(i)
                     }
